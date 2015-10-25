@@ -272,6 +272,9 @@ g3 <- ggplot(data = mtcars, aes(x=factor(am), y=wt, color=as.factor(am))) + geom
 g4 <- ggplot(data = mtcars4, aes(x=factor(am), y=hp, color=as.factor(am))) + geom_boxplot() + theme(legend.position="none")
 
 grid.arrange(g1, g2, g3, g4, ncol = 2, main = "mpg per am")
+
+plot(model4)
+plot(model6)
 ```
 
 ## References
