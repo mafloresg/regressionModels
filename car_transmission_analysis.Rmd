@@ -275,6 +275,9 @@ grid.arrange(g1, g2, g3, g4, ncol = 2, main = "mpg per am")
 
 plot(model4)
 plot(model6)
+
+plot(predict(model4), resid(model4), pch = '.')
+plot(predict(model6), resid(model6), pch = '.')
 ```
 
 ## References
