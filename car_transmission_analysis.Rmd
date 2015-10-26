@@ -256,7 +256,7 @@ mpg ~ cyl + disp + hp + vs + gear | >0.05 on vs, some low rel.     | 0.8415   | 
 
 
 ## Results
-Surely, those regressions aren't optimal, but allow to fit a reasonable model for the analysed vehicles and extract some conclusions. The intuition was that the transmission type could be irrelevant. The key for mpg is to make the engine work in the optimal consumption zone for each speed and rpm and, theoretically, this can be achieved with any transmission type. The data agrees: the automatic transmission have a slightly negative impact on the mpg of -5.3 miles per gallon. If we disregard the weight effect, the effect is the opposite, improving +2.2 miles per gallon. In both cases the values are not specially relevant.
+Surely, those regressions aren't optimal, but allow to fit a reasonable model for the analysed vehicles and extract some conclusions. The intuition was that the transmission type could be irrelevant. The key for mpg is to make the engine work in the optimal consumption zone for each speed and rpm and, theoretically, this can be achieved with any transmission type. The data agrees: the manual transmission have a slightly negative impact on the mpg of -5.3 miles per gallon. If we disregard the weight effect, the effect is the opposite, improving +2.2 miles per gallon. In both cases the values are not specially relevant.
 
 ```{r "Results",warning=FALSE, echo=FALSE}
 summary(model4)$coef
